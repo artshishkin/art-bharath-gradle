@@ -99,4 +99,10 @@ Gradle for java developers - Tutorial from Bharath Thippireddy (Udemy)
 -  modify `build.gradle`
 -  run `first-project> gradle fT`
 
+#####  13. Gradle Daemon
+
+-  `gradle clean`
+-  `gradle build --daemon` - starts daemon
+-  `gradle build --no-daemon` - you do not want to use background daemon
+
 
