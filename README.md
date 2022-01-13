@@ -55,5 +55,7 @@ Gradle for java developers - Tutorial from Bharath Thippireddy (Udemy)
     -  to force rerun all tasks we need use flag `--rerun-tasks`
         -  `gradle --rerun-tasks build`
 
+#####  10. Repositories
 
+-  `<user_home>/.gradle/caches/modules-2/files-2.1/`
 
