@@ -59,3 +59,21 @@ Gradle for java developers - Tutorial from Bharath Thippireddy (Udemy)
 
 -  `<user_home>/.gradle/caches/modules-2/files-2.1/`
 
+#####  11. Configurations
+
+-  Maven: Scope ~ Gradle: Configuration
+    
+|Maven|Gradle|     
+|---|---|
+|compile|implementation, api (compile - deprecated)|
+|provided|compileOnly|
+|runtime|runtimeOnly|
+|test|testImplementation, testCompileOnly, testRuntimeOnly|    
+
+| Configuration|Examples |
+|---|---|
+| compileOnly| Dozer, Lombok, JMapper |
+| runtimeOnly| logging-api (at compile), logging-impl (at runtime) |
+| testCompileOnly| JUnit, Jasmine, Mockito |
+| testRuntimeOnly| Jupiter, Jasmine Runtime |
+
