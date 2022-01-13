@@ -106,3 +106,13 @@ Gradle for java developers - Tutorial from Bharath Thippireddy (Udemy)
 -  `gradle build --no-daemon` - you do not want to use background daemon
 
 
+####  Section 4: Groovy Crash Course
+
+#####  16. Hello Groovy
+
+-  [Groovy with Intellij](https://www.logicbig.com/tutorials/misc/groovy/intellij.html)
+-  add JAXB dependencies if you are using Groovy 2.5.3 + Java 11
+    -  Project Structure -> module `groovy-demo` -> Dependencies ->
+    -  Attach Files or Directories -> `c:\Program Files (x86)\Groovy\lib\extras-jaxb\`
+
+
