@@ -5,6 +5,17 @@
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.3/samples
  */
 
+println 'During configuration phase Globally - Start'
+
 task firstTask{
-    println 'Gradle Rocks!'
+    println 'During configuration phase inside firstTask'
+    doFirst(){
+        println 'During execution phase -> doFirst'
+    }
+    doLast(){
+        println 'During execution phase -> doLast'
+    }
 }
+
+println 'During configuration phase Globally - End'
+

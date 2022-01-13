@@ -77,3 +77,26 @@ Gradle for java developers - Tutorial from Bharath Thippireddy (Udemy)
 | testCompileOnly| JUnit, Jasmine, Mockito |
 | testRuntimeOnly| Jupiter, Jasmine Runtime |
 
+#####  12. Build Phases
+
+-  run `first-project> gradle fT`
+    -  will see
+    -  `> Configure project :`
+-  Phases:
+    -  Initialization
+        -  Gradle figures out is it a
+            -  Single Project
+            -  **or**
+            -  Multi-module project
+        -  Create project objects for each module
+    -  Configuration:
+        -  Task1 -> Task2 -> Task3 -> Task4 -> ...
+        -  Create DAG (Direct Acyclic Graph) - no cyclic relationship between tasks
+    -  Execution:
+        -  Compiled
+        -  Tested
+        -  War/Jar
+-  modify `build.gradle`
+-  run `first-project> gradle fT`
+
+
