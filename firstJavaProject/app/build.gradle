@@ -11,12 +11,16 @@ plugins {
     id 'application'
 }
 
-repositories {
+//this is just a method of `project` object
+//and we pass closure as an argument
+project.repositories ({
+    println 'repositories'
     // Use Maven Central for resolving dependencies.
     mavenCentral()
-}
+})
 
 dependencies {
+    println 'dependencies'
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
 
@@ -25,11 +29,13 @@ dependencies {
 }
 
 application {
+    println 'application'
     // Define the main class for the application.
     mainClass = 'net.shyshkin.study.bharath.gradle.App'
 }
 
 tasks.named('test') {
+    println "tasks.named('test')"
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
