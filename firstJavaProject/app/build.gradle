@@ -11,9 +11,22 @@ plugins {
     id 'application'
 }
 
+
+project.description = 'First Java Project'
+project.version = 1.0
+
+
 //this is just a method of `project` object
 //and we pass closure as an argument
-project.repositories ({
+project.repositories({
+
+    println project.name
+    println project.description
+    println project.version
+    println project.buildDir
+    println project.projectDir
+    println project.path
+
     println 'repositories'
     // Use Maven Central for resolving dependencies.
     mavenCentral()

@@ -115,4 +115,10 @@ Gradle for java developers - Tutorial from Bharath Thippireddy (Udemy)
     -  Project Structure -> module `groovy-demo` -> Dependencies ->
     -  Attach Files or Directories -> `c:\Program Files (x86)\Groovy\lib\extras-jaxb\`
 
+####  Section 5: Understanding the build.gradle
+
+#####  24. project properties
+
+-  [Project properties](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html#N14D49)
+
 
