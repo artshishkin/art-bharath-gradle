@@ -15,6 +15,7 @@ plugins {
 project.description = 'First Java Project'
 project.version = 1.0
 
+project.ext.myOwnProperty="MyPropValue"
 
 //this is just a method of `project` object
 //and we pass closure as an argument
@@ -26,6 +27,9 @@ project.repositories({
     println project.buildDir
     println project.projectDir
     println project.path
+
+    println project.myOwnProperty
+    println project.property('myOwnProperty')
 
     println 'repositories'
     // Use Maven Central for resolving dependencies.
