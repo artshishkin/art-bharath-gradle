@@ -1,0 +1,21 @@
+task printProjectName {
+    doLast() {
+        println project.name
+    }
+}
+
+allprojects {
+    task globalPrintProjectName {
+        doLast() {
+            println project.name
+        }
+    }
+}
+
+subprojects {
+    task subPrintProjectName {
+        doLast() {
+            println project.name
+        }
+    }
+}

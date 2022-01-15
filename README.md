@@ -150,3 +150,19 @@ Deployed to Prod
     -  press any key in console to stop Jetty server
 3.  Run on Tomcat
     -  `gradle tomcatRun`
+
+####  Section 7: Multi Module Projects
+
+#####  38. Adding Tasks Across Modules
+
+From root project
+-  `gradle pPN` - name of root module
+-  `gradle web:pPN` - error
+-  `gradle gPPN` - name of all modules
+-  `gradle web:gPPN` - name of module `web`
+-  `gradle sPPN` - name of all modules accept root
+-  `gradle web:sPPN` - name of module `web`
+-  `gradle :web:sPPN` - name of module `web`
+
+
+    
