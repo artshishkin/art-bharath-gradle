@@ -33,3 +33,21 @@ subprojects {
         }
     }
 }
+
+project(':web'){
+    dependencies {
+        implementation project(':services')
+    }
+}
+
+project(':services'){
+    dependencies {
+        implementation project(':data')
+    }
+}
+
+project(':data'){
+    dependencies {
+        implementation project(':integration')
+    }
+}
