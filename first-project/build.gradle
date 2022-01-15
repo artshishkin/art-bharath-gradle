@@ -7,6 +7,10 @@
 
 println 'During configuration phase Globally - Start'
 
+// task is method project.task()
+// firstTask - name
+// {} - closure
+// gradle create object task and adds it to the object project
 task firstTask{
     println 'During configuration phase inside firstTask'
     doFirst(){
