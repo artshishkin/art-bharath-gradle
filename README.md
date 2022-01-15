@@ -164,5 +164,8 @@ From root project
 -  `gradle web:sPPN` - name of module `web`
 -  `gradle :web:sPPN` - name of module `web`
 
+#####  42. Show Dependencies
+
+-  `gradle web:dependencies`
 
     
