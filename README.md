@@ -121,4 +121,20 @@ Gradle for java developers - Tutorial from Bharath Thippireddy (Udemy)
 
 -  [Project properties](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html#N14D49)
 
+#####  27. Task variables and methods
+
+-  `gradle dTP`
+```
+> Task :deployToStage
+Deployed to Stage
+
+> Task :deployToProd
+Deployed to Prod
+```
+-  executes dTS TOO because dTD depends on dTS 
+-  Default tasks
+    -  `defaultTasks "deployToStage"`
+    -  `gradle`
+    -  configuration happens and deployToStage task
+
 

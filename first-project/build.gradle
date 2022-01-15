@@ -11,15 +11,44 @@ println 'During configuration phase Globally - Start'
 // firstTask - name
 // {} - closure
 // gradle create object task and adds it to the object project
-task firstTask{
+task firstTask {
     println 'During configuration phase inside firstTask'
-    doFirst(){
+
+    def abc = 123
+    println abc
+    doFirst() {
         println 'During execution phase -> doFirst'
+        abc = 321
+        println abc
     }
-    doLast(){
+    doLast() {
         println 'During execution phase -> doLast'
+        println abc
     }
 }
+
+task deployToStage {
+    doLast() {
+        println "Deployed to Stage"
+    }
+}
+
+task deployToProd {
+    doLast() {
+        println "Deployed to Prod"
+    }
+}
+
+task cleanUpFiles {
+    doLast() {
+        println "Clean Up Files"
+    }
+}
+
+deployToProd.dependsOn deployToStage
+deployToProd.finalizedBy cleanUpFiles
+
+defaultTasks "deployToStage"
 
 println 'During configuration phase Globally - End'
 
