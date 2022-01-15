@@ -8,6 +8,7 @@
 
 plugins {
     id 'war'
+    id "org.gretty" version "4.0.0"
 }
 
 repositories {

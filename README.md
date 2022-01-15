@@ -137,4 +137,16 @@ Deployed to Prod
     -  `gradle`
     -  configuration happens and deployToStage task
 
+####  Section 6: Create a Java Web Application  
 
+#####  34. Run the App
+
+1.  List tasks
+    -  `gradle tasks --all`
+2.  Run on Jetty
+    -  `gradle appRun`
+        -  by default starts Jetty server     
+    -  visit `http://localhost:8080/app/`
+    -  press any key in console to stop Jetty server
+3.  Run on Tomcat
+    -  `gradle tomcatRun`

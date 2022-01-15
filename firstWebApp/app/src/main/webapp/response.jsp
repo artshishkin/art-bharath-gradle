@@ -3,6 +3,6 @@
 <html>
 <head><title>Discount Page</title></head>
 <body>
-<h2>Discount is ${discount}</h2>
+<h2>${discount}</h2>
 </body>
 </html>
