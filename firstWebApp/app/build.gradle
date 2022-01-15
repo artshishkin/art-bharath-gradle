@@ -19,3 +19,5 @@ repositories {
 dependencies {
     compileOnly 'jakarta.servlet:jakarta.servlet-api:5.0.0'
 }
+
+gretty.httpPort = 8090
