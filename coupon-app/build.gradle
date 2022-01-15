@@ -16,6 +16,9 @@ subprojects {
 
     apply plugin: 'application'
 
+    version = '1.0'
+    group = 'net.shyshkin.study.gradle'
+
     repositories {
         mavenCentral()
     }
