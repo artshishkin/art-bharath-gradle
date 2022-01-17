@@ -189,5 +189,10 @@ From root project
 
 -  `gradle sonarqube`
 
+#####  Docker Compose Gradle Plugin  
+
+-  `gradle composeUp`
+-  `gradle composeDown`
+
 
     
