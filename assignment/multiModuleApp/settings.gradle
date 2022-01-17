@@ -1,0 +1,3 @@
+rootProject.name = 'multiModuleApp'
+include('data')
+include('helloWebApp')
