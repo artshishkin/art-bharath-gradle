@@ -194,5 +194,16 @@ From root project
 -  `gradle composeUp`
 -  `gradle composeDown`
 
+#####  50. Configure a Jenkins Gradle Build
+
+1.  Start Jenkins in Docker
+2.  Login
+    -  login: admin
+    -  password in logs: 6c0053abdc294ed080275387eca53099
+3.  Install plugins
+    -  Install Suggested Plugins
+    -  Make sure `Gradle plugin` is installed
+        -  Manage Jenkins -> Manage Plugins -> 
+        -  Installed -> Gradle Plugin 
 
     
