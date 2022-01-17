@@ -178,5 +178,14 @@ From root project
 -  finalize test by jacocoTestReport
 -  `gradle build`
 
+#####  48. Install and Launch Sonar
+
+-  `http://localhost:9000`
+-  Login: admin
+-  Password: admin
+-  During the first login update password to `ADMIN`
+
+
+
 
     
