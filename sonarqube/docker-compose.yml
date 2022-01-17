@@ -7,6 +7,8 @@ services:
       - 9000:9000
     volumes:
       - sonar-data:/opt/sonarqube/data
+    environment:
+      - SONAR_FORCEAUTHENTICATION=false
 
 volumes:
   sonar-data:

@@ -24,13 +24,6 @@ jacocoTestReport.dependsOn test
 
 gretty.httpPort = 8090
 
-sonarqube {
-    properties {
-        property "sonar.login", "admin"
-        property "sonar.password", "ADMIN"
-    }
-}
-
 jacocoTestReport {
     reports {
         xml.enabled true
