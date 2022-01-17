@@ -11,7 +11,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.StringWriter;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
@@ -32,7 +34,7 @@ class CouponServletTest {
     PrintWriter printWriter;
 
     @Test
-    void doGet() throws IOException, ServletException {
+    void doGet_Art() throws IOException, ServletException {
         //given
         var couponServlet = new CouponServlet();
         given(response.getWriter()).willReturn(printWriter);
@@ -42,6 +44,23 @@ class CouponServletTest {
 
         //then
         then(printWriter).should().print(eq("SUPERSALE"));
+    }
+
+    @Test
+    void doGet_Bharath() throws IOException, ServletException {
+        //given
+        var couponServlet = new CouponServlet();
+
+        StringWriter stringWriter = new StringWriter();
+        var printWriter = new PrintWriter(stringWriter);
+
+        given(response.getWriter()).willReturn(printWriter);
+
+        //when
+        couponServlet.doGet(request, response);
+
+        //then
+        assertEquals("SUPERSALE", stringWriter.toString());
     }
 
     @Test
