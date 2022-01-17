@@ -185,7 +185,9 @@ From root project
 -  Password: admin
 -  During the first login update password to `ADMIN`
 
+#####  49. Generate Sonar Report
 
+-  `gradle sonarqube`
 
 
     

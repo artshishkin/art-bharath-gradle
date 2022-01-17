@@ -11,6 +11,7 @@ plugins {
     id "org.gretty" version "4.0.0"
 
     id 'jacoco'
+    id "org.sonarqube" version "3.3"
 }
 
 dependencies {
@@ -30,3 +31,10 @@ test.finalizedBy(jacocoTestReport)
 jacocoTestReport.dependsOn test
 
 gretty.httpPort = 8090
+
+sonarqube {
+    properties {
+        property "sonar.login", "admin"
+        property "sonar.password", "ADMIN"
+    }
+}
