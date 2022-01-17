@@ -168,4 +168,15 @@ From root project
 
 -  `gradle web:dependencies`
 
+####  Section 8: Unit Testing , Test Coverage and CI
+
+#####  47. Generate Jacoco Coverage Report
+
+-  `gradle web:tasks`
+-  `gradle clean build jacocoTestReport`
+-  **OR**
+-  finalize test by jacocoTestReport
+-  `gradle build`
+
+
     

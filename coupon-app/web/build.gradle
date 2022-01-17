@@ -9,6 +9,8 @@
 plugins {
     id 'war'
     id "org.gretty" version "4.0.0"
+
+    id 'jacoco'
 }
 
 dependencies {
@@ -23,5 +25,8 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+test.finalizedBy(jacocoTestReport)
+jacocoTestReport.dependsOn test
 
 gretty.httpPort = 8090
