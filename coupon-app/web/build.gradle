@@ -36,5 +36,25 @@ sonarqube {
     properties {
         property "sonar.login", "admin"
         property "sonar.password", "ADMIN"
+        property "sonar.jacoco.reportPaths", project.buildDir.toPath().resolveSibling("build/reports/jacoco/test/jacocoTestReport.xml").toString()
     }
 }
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+    }
+}
+
+tasks.named('sonarqube').configure {
+    dependsOn test
+}
+
+println project.name
+println project.buildDir
+//println sonar.jacoco.reportPaths
+
+//println project.buildDir.toPath().resolve("/reports/jacoco/test")
+println project.buildDir.toString() + "/reports/jacoco/test"
+println project.buildDir.toPath().resolve(project.buildDir.toString() + "/reports/jacoco/test")
+println project.buildDir.toPath().resolveSibling("build/reports/jacoco/test")
