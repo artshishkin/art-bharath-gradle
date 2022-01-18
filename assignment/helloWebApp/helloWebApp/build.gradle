@@ -3,6 +3,7 @@ plugins {
     id "org.gretty" version "4.0.0"
 
     id 'jacoco'
+    id "org.sonarqube" version "3.3"
 }
 
 repositories {
@@ -28,4 +29,8 @@ jacocoTestReport {
     reports {
         xml.enabled true
     }
+}
+
+tasks.named('sonarqube').configure {
+    dependsOn test
 }
