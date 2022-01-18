@@ -227,4 +227,10 @@ From root project
 -  `gradle assemble` - package into fat jar
 -  `gradle bootRun` - run application
 
-    
+####  Section 10: Migrate Maven Project to Gradle
+
+#####  54. Migrate Coupon Service
+
+Inside `couponservice` run 
+-  `gradle init`
+
