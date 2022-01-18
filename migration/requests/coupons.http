@@ -1,0 +1,28 @@
+###  Create new DISCOUNT Coupon
+POST http://localhost:9091/couponapi/coupons
+Content-Type: application/json
+
+{
+  "code": "DISCOUNT",
+  "discount": 10.00,
+  "expDate": "07/02/2022"
+}
+
+###  Create new SUPERSALE Coupon
+POST http://localhost:9091/couponapi/coupons
+Content-Type: application/json
+
+{
+  "code": "SUPERSALE",
+  "discount": 20.00,
+  "expDate": "27/01/2022"
+}
+
+###  Get info about DISCOUNT Coupon
+GET http://localhost:9091/couponapi/coupons/DISCOUNT
+Accept: application/json
+
+###  Get info about SUPERSALE Coupon
+GET http://localhost:9091/couponapi/coupons/SUPERSALE
+Accept: application/json
+

@@ -235,3 +235,5 @@ Inside `couponservice` run
 -  `gradle init`
 Create database:
 -  run commands from `tables.sql` in the MySQL console   
+Run:
+-  `gradle bootRun`   
