@@ -205,5 +205,17 @@ From root project
     -  Make sure `Gradle plugin` is installed
         -  Manage Jenkins -> Manage Plugins -> 
         -  Installed -> Gradle Plugin 
-
-    
+4.  Create Job
+    -  Dashboard -> New Item
+    -  Item name: `JavaWebAppBuild`
+    -  Freestyle project -> OK
+    -  Description: `Coupon Application Jenkins Job`
+    -  Build:
+        -  Invoke Gradle Script
+        -  Use Gradle Wrapper
+            - Wrapper Location: `/var/jenkins_work`
+        -  Tasks: `clean build`
+        -  Advanced ->
+            -  Build File: `/var/jenkins_work/build.gradle`
+5.  Build Manually
+    -  Dashboard -> JavaWebAppBuild -> Build Now

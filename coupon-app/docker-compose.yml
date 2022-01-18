@@ -5,6 +5,7 @@ services:
     image: jenkins/jenkins:2.319.2-jdk11
     volumes:
       - jenkins-data:/var/jenkins_home
+      - "./:/var/jenkins_work"
     ports:
       - 8080:8080
       - 50000:50000
