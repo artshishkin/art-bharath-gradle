@@ -1,5 +1,8 @@
-package com.bharath.springcloud.controllers;
+package net.shyshkin.study.gradle.migration.controllers;
 
+import net.shyshkin.study.gradle.migration.dto.Coupon;
+import net.shyshkin.study.gradle.migration.model.Product;
+import net.shyshkin.study.gradle.migration.repos.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -7,10 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-
-import com.bharath.springcloud.dto.Coupon;
-import com.bharath.springcloud.model.Product;
-import com.bharath.springcloud.repos.ProductRepo;
 
 @RestController
 @RequestMapping("/productapi")

@@ -1,4 +1,4 @@
-package com.bharath.springcloud.dto;
+package net.shyshkin.study.gradle.migration.dto;
 
 import java.math.BigDecimal;
 

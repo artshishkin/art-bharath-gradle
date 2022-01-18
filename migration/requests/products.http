@@ -1,0 +1,10 @@
+###  Create new Product with DISCOUNT Coupon
+POST http://localhost:9090/productapi/products
+Content-Type: application/json
+
+{
+  "name": "Xiaomi Redmi Note 7",
+  "description": "Cool Phone)",
+  "price": 180.00,
+  "couponCode": "DISCOUNT"
+}
