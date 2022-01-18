@@ -1,15 +1,9 @@
-package com.bharath.springcloud.controllers;
+package net.shyshkin.study.gradle.migration.controllers;
 
+import net.shyshkin.study.gradle.migration.model.Coupon;
+import net.shyshkin.study.gradle.migration.repos.CouponRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
-
-import com.bharath.springcloud.model.Coupon;
-import com.bharath.springcloud.repos.CouponRepo;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/couponapi")

@@ -1,8 +1,7 @@
-package com.bharath.springcloud.repos;
+package net.shyshkin.study.gradle.migration.repos;
 
+import net.shyshkin.study.gradle.migration.model.Coupon;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.bharath.springcloud.model.Coupon;
 
 public interface CouponRepo extends JpaRepository<Coupon, Long> {
 
