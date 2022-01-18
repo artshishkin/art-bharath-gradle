@@ -1,6 +1,8 @@
 plugins {
     id 'war'
     id "org.gretty" version "4.0.0"
+
+    id 'jacoco'
 }
 
 repositories {
@@ -17,4 +19,13 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+test.finalizedBy(jacocoTestReport)
+jacocoTestReport.dependsOn test
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+    }
 }
