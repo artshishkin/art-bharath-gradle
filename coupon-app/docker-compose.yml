@@ -6,6 +6,7 @@ services:
     volumes:
       - jenkins-data:/var/jenkins_home
       - "./:/var/jenkins_work"
+      - "./../assignment/helloWebApp:/var/jenkins_helloWebApp"
     ports:
       - 8080:8080
       - 50000:50000
