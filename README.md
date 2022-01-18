@@ -219,3 +219,12 @@ From root project
             -  Build File: `/var/jenkins_work/build.gradle`
 5.  Build Manually
     -  Dashboard -> JavaWebAppBuild -> Build Now
+
+####  Section 9: Create Spring Boot Gradle Project
+
+#####  51. Create and run spring boot project
+
+-  `gradle assemble` - package into fat jar
+-  `gradle bootRun` - run application
+
+    
