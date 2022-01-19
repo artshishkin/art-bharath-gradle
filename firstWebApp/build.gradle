@@ -1,0 +1,21 @@
+public class MyAWSPlugin implements Plugin<Project> {
+
+    @Override
+    void apply(Project project) {
+        project.task("copyToS3") {
+            doLast {
+                println "Copied to S3"
+            }
+        }
+
+        project.task("deployToEC2") {
+            doLast {
+                println "Deployed to EC2"
+            }
+        }
+    }
+}
+
+apply plugin: MyAWSPlugin
+
+deployToEC2.dependsOn copyToS3
